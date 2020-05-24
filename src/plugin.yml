@@ -1,0 +1,13 @@
+name: BlockGame
+author: daniel
+version: 1.0
+main: me.daniel.BlockGame.BlockGamePlugin
+description: very fun game
+api-version: 1.13
+commands:
+   startgame:
+      description: starts game
+      usage: /<command> <player> <player1> <duration>
+   skip:
+      description: skips block
+      usage: /<command> <player>
