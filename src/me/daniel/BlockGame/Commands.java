@@ -14,9 +14,10 @@ public class Commands implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 
 		if (sender instanceof Player && cmd.getName().equalsIgnoreCase("startgame")) {
-			
-			if(args.length < 2) {
+
+			if (args.length < 2) {
 				return false;
+				
 			}
 
 			try {
@@ -48,13 +49,16 @@ public class Commands implements CommandExecutor {
 		}
 
 		if (sender instanceof Player && cmd.getName().equalsIgnoreCase("skip")) {
-			if(args.length != 1) {
+
+			if (args.length != 1) {
 				return false;
 			}
+
 			if (Bukkit.getServer().getPlayerExact(args[0]) == null) {
 				sender.sendMessage(ChatColor.RED + "The Name " + args[0] + " Does Not Exist");
 				return true;
 			}
+
 			Player player = Bukkit.getServer().getPlayerExact(args[0]);
 			BlockGame.changeMaterials(player);
 		}
