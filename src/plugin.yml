@@ -7,7 +7,16 @@ api-version: 1.13
 commands:
    startgame:
       description: starts game
-      usage: /<command> <player> <player1> <duration>
+      usage: 'Usage: /<command> <players> <duration>'
    skip:
       description: skips block
-      usage: /<command> <player>
+      usage: 'Usage: /<command> <players>'
+   endgame:
+      description: ends game
+      usage: 'Usage: /<command>'
+   pause:
+      description: pauses game
+      usage: 'Usage: /<command>'
+   play:
+      description: resumes game after pause
+      usage: 'Usage: /<command>'
